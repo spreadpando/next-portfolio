@@ -1,7 +1,6 @@
-
 const IndexPage = () => {
   return (
-    <div />
+    <div>index</div>
   )
 }
 
