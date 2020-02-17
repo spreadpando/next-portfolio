@@ -9,8 +9,8 @@ const PageContainer = ({ h1, posts }) => {
           posts
             ? posts.map((post, i) => (
               <div className='post' key={`post-${i}`}>
-                <h2>post.head</h2>
-                <p>post.caption</p>
+                <h2 className='post-head'>{post.head}</h2>
+                <p className='post-cap'>{post.caption}</p>
               </div>
             )) : ''
         }
@@ -28,6 +28,18 @@ const PageContainer = ({ h1, posts }) => {
             .page-title{
                 position:relative;
                 margin:1.2em 0 0 .67em;
+            }
+            .post{
+                posiion: relative;
+                display:block;
+                margin:4vh 25vw 0 25vw;
+                width:50vw;
+            }
+            .post-head{
+                font-weight:500;
+            }
+            .post-cap{
+                padding: 0 0 0 2vw;
             }
             `}
       </style>
