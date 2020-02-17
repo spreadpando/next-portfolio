@@ -1,6 +1,10 @@
+import PageContainer from '../components/page-cont'
+
 const PortfolioPage = () => {
   return (
-    <div>portfolio</div>
+    <PageContainer
+      h1='projects'
+    />
   )
 }
 

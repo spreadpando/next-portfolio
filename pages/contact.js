@@ -1,6 +1,10 @@
+import PageContainer from '../components/page-cont'
+
 const ContactPage = () => {
   return (
-    <div>contact</div>
+    <PageContainer
+      h1='c v'
+    />
   )
 }
 
